@@ -39,7 +39,7 @@ async def main():
     chatgpt_credentials = {'api_key': os.environ("CHATGPT_API_KEY")}
     google_credentials_file = 'path/to/your/google_credentials.json'
     chromedriver_path = 'chromedriver'
-    nombre_del_streamer = os.environ("TWITCH_STREAMER_NAME") or "chusommontero"
+    nombre_del_streamer = os.environ("TWITCH_STREAMER_NAME")
 
     bot = TwitchBot(twitch_credentials, chatgpt_credentials, google_credentials_file, chromedriver_path, nombre_del_streamer)
 
