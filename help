@@ -1,0 +1,20 @@
+Para obtener los permisos para la API de ChatGPT, sigue estos pasos:
+
+Ve a la página de OpenAI: https://www.openai.com/
+Regístrate o inicia sesión en tu cuenta.
+Accede al panel de control de la API: https://platform.openai.com/signup
+Sigue las instrucciones para registrarte en la API. Una vez que hayas completado el proceso de registro, recibirás un correo electrónico de confirmación.
+En el panel de control de la API, encontrarás tu clave API. Copia y pégala en tu código como el valor de api_key para chatgpt_credentials.
+Para obtener el archivo google_credentials_file para utilizar la API de Speech-to-Text de Google, sigue estos pasos:
+
+Ve a Google Cloud Console: https://console.cloud.google.com/
+Regístrate o inicia sesión en tu cuenta de Google.
+Crea un nuevo proyecto o selecciona uno existente.
+Asegúrate de que el proyecto esté vinculado a una cuenta de facturación (es posible que se apliquen cargos por el uso de la API).
+Activa la API de Speech-to-Text para tu proyecto siguiendo este enlace: https://console.cloud.google.com/flows/enableapi?apiid=speech.googleapis.com
+Ve a la página de las credenciales de la API: https://console.cloud.google.com/apis/credentials
+Haz clic en "Crear credenciales" y selecciona "Clave de cuenta de servicio".
+Elige un nombre para la cuenta de servicio y establece el rol como "Propietario" o "Editor".
+Haz clic en "Crear" y descarga el archivo JSON que contiene las credenciales de la cuenta de servicio.
+Guarda este archivo en un lugar seguro y úsalo como el valor de google_credentials_file en tu código.
+Una vez que hayas obtenido las credenciales de ChatGPT y Google Cloud, asegúrate de no compartir estos archivos o claves API con otras personas, ya que podrían acceder a tus recursos y generar cargos en tu cuenta.

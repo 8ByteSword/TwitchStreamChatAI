@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chatgpt
+Version: 2.2212.0
+Home-page: https://github.com/brunneis/chatgpt-python
+Author: Rodrigo Martínez Castaño, Alejandro Suárez
+Author-email: rodrigo@martinez.gal, alejandrosuarez.eu@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: tls-client
+Requires-Dist: rich
+
