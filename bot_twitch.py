@@ -29,7 +29,8 @@ class TwitchBot:
         async for audio_data in self.audio_processor.listen():
             transcript = await self.audio_processor.process_audio(audio_data)
             if self.chatgpt.is_direct_question(transcript):
-                await self.chatgpt.answer_question(self.twitch_chat, transcript)
+                answer = await self.chatgpt.answer_question(self.twitch_chat, transcript)
+                await self.twitch_chat.send_message(answer)
 
 async def main():
     load_dotenv()
