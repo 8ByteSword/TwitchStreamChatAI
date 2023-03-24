@@ -1,9 +1,11 @@
 import asyncio, os
-from chat_with_gpt import ChatWithGPT
-from twitch_chat import TwitchChat
-from audio_processor import AudioProcessor
+from src.audio.audio_processor import AudioProcessor
+from src.audio.twitch_audio import TwitchAudio
+from src.chat.chat_with_gpt import ChatWithGPT
+from src.chat.twitch_chat import TwitchChat
+from src.utils.utils import get_twitch_token
 from summarizer import extract_keywords, generate_summary
-from twitch_audio import TwitchAudio
+
 from utils import get_twitch_token
 from dotenv import load_dotenv
 
@@ -39,7 +41,7 @@ async def main():
     chatgpt_credentials = {'api_key': os.environ("CHATGPT_API_KEY")}
     google_credentials_file = 'path/to/your/google_credentials.json'
     chromedriver_path = 'chromedriver'
-    nombre_del_streamer = os.environ("TWITCH_STREAMER_NAME") or "chusommontero"
+    nombre_del_streamer = os.environ("TWITCH_STREAMER_NAME")
 
     bot = TwitchBot(twitch_credentials, chatgpt_credentials, google_credentials_file, chromedriver_path, nombre_del_streamer)
 

@@ -1,6 +1,6 @@
 import unittest
-from new_features import NewFeatures
-from bot_twitch import TwitchBot
+from src.features.new_features import NewFeatures
+from src.bot_twitch import TwitchBot
 
 class TestNewFeatures(unittest.TestCase):
     def setUp(self):
