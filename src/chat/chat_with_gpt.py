@@ -1,6 +1,8 @@
 import openai
 
-class ChatWithGPT:
+from utils.audit_decorators import AuditBase
+
+class ChatWithGPT(AuditBase):
     def __init__(self, credentials):
         self.api_key = credentials['api_key']
         openai.api_key = self.api_key

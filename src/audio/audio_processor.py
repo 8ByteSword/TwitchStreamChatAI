@@ -1,7 +1,9 @@
 from pydub import AudioSegment
 from google.cloud import speech_v1p1beta1 as speech
 
-class AudioProcessor:
+from utils.audit_decorators import AuditBase
+
+class AudioProcessor(AuditBase):
     def __init__(self, google_credentials_file):
         self.client = speech.SpeechClient.from_service_account_json(google_credentials_file)
 

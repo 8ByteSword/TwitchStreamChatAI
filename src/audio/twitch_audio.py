@@ -3,7 +3,9 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-class TwitchAudio:
+from utils.audit_decorators import AuditBase
+
+class TwitchAudio(AuditBase):
     def __init__(self, streamer, chromedriver_path):
         self.streamer = streamer
         self.chromedriver_path = chromedriver_path

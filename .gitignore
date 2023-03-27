@@ -36,3 +36,7 @@ venv.bak/
 
 # Other
 .DS_Store
+reorganize.sh
+chromedriver
+.env
+
